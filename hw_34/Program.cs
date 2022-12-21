@@ -10,7 +10,7 @@ int[] CreateArray()
     int[] array = new int[10];
     for(int i = 0; i < 10; i++)
     {
-        array[i] = new Random().Next(100, 999);
+        array[i] = new Random().Next(100, 1000);
     }
     Console.Write("[");
 
@@ -29,7 +29,7 @@ for(int i = 0; i <10; i++)
 {
     if(Array[i] % 2 == 0) even++;
 }
-Console.WriteLine("-->");
+Console.WriteLine("->");
 Console.WriteLine($"Количество чётных чисел в массиве: {even}.");
 }
 

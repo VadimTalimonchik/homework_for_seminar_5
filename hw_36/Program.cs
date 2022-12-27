@@ -35,9 +35,13 @@ int[] array = CetArray(a, b, c);
 PrintArray(array);
 Console.WriteLine();
 
-int sum = 0;
-foreach(int el in array)
+void FindSum(int[] ar)
 {
-    if(el % 2 == 0) sum +=el;
+int sum = 0;
+for(int i = 0; i < array.Length; i++)
+{
+    if(i % 2 != 0) sum += array[i];
 }
-Console.WriteLine($"Сумма чётных чисел в массиве равна: {sum}.");
+Console.WriteLine($"Сумма чисел стоящих на нечётных позициях в массиве равна: {sum}.");
+}
+FindSum(array);
